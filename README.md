@@ -1,12 +1,12 @@
 # lru_cache
 lru_cache Concurrency security
 
-##install
+## install
 ```
 go get github.com/duckbb/lru_cache
 ```
 
-##quick start
+## quick start
 ```api
 import(
     lru "github.com/duckbb/lru_cache"
@@ -14,12 +14,12 @@ import(
 cache := lru.New(100)
 cache.Add("key1","value1")
 ```
-###option init
+### option init
 ```api
 l := list.New() 
 cache := lru.New(WithMaxCapactity(100),WithCacheList(l))
 ```
-###operate
+### operate
 ```api
 //1.add one element
 cache.Add("key","value")
